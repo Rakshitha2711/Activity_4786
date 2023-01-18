@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html >
+<body>
+ <div class="login">
+	<h1>Prediction of Personal Loan</h1>
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="Age" placeholder="Age Value" required="required" /><br><br>
+      <input type="text" name="Experience" placeholder="Number of years" required="required" /><br><br>
+	<input type="text" name="Income" placeholder="Income Value" required="required" /><br><br>
+      <input type="text" name="Family" placeholder="Number of people" required="required" /><br><br>
+      <input type="text" name="CCAvg" placeholder="CC Avg Value" required="required" /><br><br>
+      <input type="text" name="Education" placeholder="Education Value" required="required" /><br><br>
+      <input type="text" name="Mortage" placeholder="Mortage Value" required="required" /><br><br>
+      <input type="text" name="Securities Account" placeholder="Number of accounts" required="required" /><br><br>
+      <input type="text" name="CD Account" placeholder="Value" required="required" /><br><br>
+      <input type="text" name="Online" placeholder="Value" required="required" /><br><br>
+      <input type="text" name="CreditCard" placeholder="Value" required="required" /><br><br>
+
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button><br>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
